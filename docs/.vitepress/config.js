@@ -2,11 +2,13 @@
  * @Author: 朽木白
  * @Date: 2022-09-03 01:09:44
  * @LastEditors: xxx@xxx.com
- * @LastEditTime: 2022-09-12 15:40:42
+ * @LastEditTime: 2022-09-12 21:10:56
  * @Description:
  */
 
-import sidebarDemo from './sidebar/demo';
+import sidebarData from './sidebar/data';
+import sidebarAlgorithm from './sidebar/algorithm';
+import sidebarDesignPattern from './sidebar/design-pattern';
 
 module.exports = {
   title: 'vivace',
@@ -38,13 +40,25 @@ module.exports = {
     },
     nav: [
       {
-        text: 'demo',
-        link: '/demo/',
-        activeMatch: '/demo/',
+        text: '数据结构',
+        link: '/data-structure/',
+        activeMatch: '/data-structure/',
       },
+      {
+        text: '算法',
+        link: '/algorithm/',
+        activeMatch: '/algorithm/'
+      },
+      {
+        text: '设计模式',
+        link: '/design-pattern/',
+        activeMatch: '/design-pattern/'
+      }
     ],
     sidebar: {
-      '/demo/': sidebarDemo(),
+      '/data-structure/': sidebarData(),
+      '/algorithm/': sidebarAlgorithm(),
+      '/design-pattern/': sidebarDesignPattern(),
     },
   },
 };
